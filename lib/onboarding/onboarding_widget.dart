@@ -442,8 +442,10 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                             _model.textController2?.clear();
                                             safeSetState(() {});
                                           },
-                                          child: const Icon(
+                                          child: Icon(
                                             Icons.clear,
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
                                             size: 24.0,
                                           ),
                                         )
